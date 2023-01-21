@@ -654,6 +654,25 @@ img {
     border-color: var(--primary-brand);
 }
 
+.container-modal-policy {
+    display: flex;
+    align-items: center;
+}
+
+.modal-form-check-text {
+    align-items: center;
+    width: 338px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.modal-form-link-policy {
+    text-decoration-line: underline;
+    color: var(--primary-brand);
+}
+
 .modal-form-check-text::before {
     content: '';
     display: block;
@@ -662,12 +681,19 @@ img {
     border: 1.25px solid var(--dark);
     border-radius: 2px;
     cursor: pointer;
+    margin-right: 24px;
 }
 
 .modal-form-check:checked + .modal-form-check-text::before {
     border: none;
     background-color: var(--pressed-state);
     background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.modal-form-check:focus + .modal-form-check-text::before {
+    outline: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 .modal-close-btn {
